@@ -7,23 +7,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="javascript" href="assets/javascript/game.js">
 </head>
 
 <body>
+    <div class="main-fluid">
 
-    <script>
-        var words = ['ARMAGEDDON', 'HALLOWEEN', 'WATCHMEN', 'ZOMBIELAND', 'SHARKNADO']
-        var choice = Math.floor(Math.random() * 5);
-        var answer = words[choice];
-        var length = answer.length;
-        var win = length;
-        var letters = answer.split('');
-        var atteptsLeft = 15;
-        var output = '';
-        var userLetter = "";
-    </script>
+        <div class="logoContainer">
 
+            <div class="bgLogo">
+                <img src="./assets/images/title.png" alt="backyard">
+            </div>
+
+        </div>
+
+        <div id="bodyContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/images/Logo512x512.png" alt="log">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="start">
+                            <h1>Press button to start!</h1>
+                            <button type="button" class="btn btn-outline-dark">Start</button>
+                        </div>
+                        <br>
+                        <div class="win"></div>
+                        <br>
+                        <div class="current"></div>
+                        <br>
+                        <div class="remaining"></div>
+                        <br>
+                        <div class="guessed"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+var words = ['ARMAGEDDON', 'HALLOWEEN', 'WATCHMEN', 'ZOMBIELAND', 'SHARKNADO']
+var choice = Math.floor(Math.random() * 5);
+var answer = words[choice];
+var wordLength = answer.length;
+var display = [wordLength]
+var win = wordLength;
+var letters = answer.split('');
+var atteptsLeft = 15;
+var output = '';
+var userLetter = "";
